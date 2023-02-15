@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Listado de tareas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <form id="newTaskForm">
+                <label for="taskName">Nombre:</label> 
+                <input type="text" id="taskName">
+                <label for="taskEstimation">Estimación:</label>
+                <input type="text" id="taskEstimation">
+            </form>
+        </div>
+
+        <div>
+            <div>
+                <div id = "granpa"class="flex__container">
+                    <div id="toDo">
+                        <div>
+                            TO DO <button id="toDoButton">+</button>
+                        </div>
+                        <div>
+                            <div id = toDoFather class="father__container">
+                                <div id = "default"class="task__container">
+                                    <button id="buttonDelete">x</button>
+                                    <div>
+                                        <button id="buttonGoLeft">-</button>
+                                    </div>
+                                    <p id = taskDescription>
+                                        Nombre Tarea
+                                    </p>
+                                    <div>
+                                        <button id="buttonGoRight">></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="inProgress">
+                        <div>
+                            IN PROGRESS <button id="inProgressButton">+</button>
+                        </div>
+                        <div>
+                            <div id = progressFather class="father__container">
+                                <div class="flex__container">
+                                    <button onclick="deleteItem()">x</button>
+                                    <div>
+                                        <button onclick="goLeft()">-</button>
+                                    </div>
+                                    <div>hola</div>
+                                    <div>
+                                        <button onclick="goRight()">></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="toTest">
+                        <div>
+                            TO BE TESTED <button id="toBeTestedButton">+</button>
+                        </div>
+                        <div id="toTestFather" class="father__container">
+
+                        </div>
+                    </div>
+                    <div id="done">
+                        <div>
+                            DONE <button id ="doneButton">+</button>
+                        </div>
+                        <div id ="doneFather" class="father__container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

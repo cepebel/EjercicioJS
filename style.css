@@ -1,0 +1,35 @@
+.flex__container{
+    display: flex;
+    margin-top:  20%;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+.flex__container > div{
+    background-color: #395a40;
+    width: 25%;
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.father__container{
+    display:flex;
+    margin-top: 0.05%;
+    flex-direction: column;
+    justify-content: center;
+}
+.task__container{
+    display:flex;
+    margin-top: 0.05%;
+    flex-direction: row;
+    justify-content: center;
+}
+.title{
+    background-color: aquamarine;
+    color:darkgreen
+}
+#default{
+    display: none;
+}
